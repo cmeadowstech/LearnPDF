@@ -1,13 +1,15 @@
 # Convert MSFT Learn paths to PDFs
 
-Script to convert MSFT Learn modules to PDFs. Still a POC; needs further testing. Not sure how consistent their HTML layouts are. I tried to remove the consistent divs such as the header and footer instead of selecting the content for better reliability, but we'll see how it goes.
+Script to convert MSFT Learn modules to PDFs. Might need more tweaking and testing, but at the moment it's working pretty well. Take a peak at the PDF folder for examples of converted PDFs from the Learn Path [AZ-400: Get started on a DevOps transformation journey](https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/)
 
-Closer to completion I will update script to properly run from CLI instead of editing the URL variable manually.
+## Requirements
+1. Install pip dependencies from requirements.txt
+2. Calibre - https://calibre-ebook.com/download
+    - Specifically this script uses the ebook-convert CLI tool
 
-This is reliant on Calibre being installed. Testing on Debian 12, where you can install with 
+## How to use
+Once the requiremments are installed, you can simply run with the url as a commandline argument.
 
 ```
-apt install calibre
+python3 main.py 'https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/'
 ```
-
-See [Calibre docs](https://manual.calibre-ebook.com/generated/en/ebook-convert.html) for more information on ebook-convert

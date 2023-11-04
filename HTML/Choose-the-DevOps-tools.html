@@ -1,0 +1,2647 @@
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Introduction - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/1-introduction" property="og:url"/>
+  <meta content="Introduction" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Introduction" name="description"/>
+   <meta content="71a5edc3-b6a2-8bac-9091-1cb297232778" name="document_id"/>
+   <meta content="b30199d6-15dc-e776-3251-9a0b2de58f47" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/1-introduction.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/1-introduction.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.introduction" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="fe6a9f8c-7b7c-ee0c-b9f3-514e725e245e" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/1-introduction.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/1-introduction" rel="canonical"/>
+   <title>
+    Introduction - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/1-introduction">
+             Introduction
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.introduction">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            Do you currently use tools to manage daily work and plan for the future? It is essential when implementing DevOps if you want to increase your maturity level.
+           </p>
+           <p>
+            This module explores Azure DevOps and GitHub tools and helps organizations define their work management tool and licensing strategy.
+           </p>
+           <h2 id="learning-objectives">
+            Learning objectives
+           </h2>
+           <p>
+            After completing this module, students and professionals can:
+           </p>
+           <ul>
+            <li>
+             Design a tool integration strategy.
+            </li>
+            <li>
+             Design a license management strategy (for example, Azure DevOps and GitHub users).
+            </li>
+            <li>
+             Design a strategy for end-to-end traceability from work items to working software.
+            </li>
+            <li>
+             Design an authentication and access strategy.
+            </li>
+            <li>
+             Design a strategy for integrating on-premises and cloud resources.
+            </li>
+           </ul>
+           <h2 id="prerequisites">
+            Prerequisites
+           </h2>
+           <ul>
+            <li>
+             Understanding of what DevOps is and its concepts.
+            </li>
+            <li>
+             Familiarity with DevOps tools is helpful but is not necessary.
+            </li>
+            <li>
+             Beneficial to have experience in an organization that delivers software.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="What is Azure DevOps? - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/2-what-is-azure-devops" property="og:url"/>
+  <meta content="What is Azure DevOps?" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="What is Azure DevOps?" name="description"/>
+   <meta content="9138fcfe-4a83-61d3-24df-d7280daec1f1" name="document_id"/>
+   <meta content="952fa351-17e6-60e3-e91b-5908b085b4b8" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="e0cd322479f069a59373eba788d082e24e631b3f" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/e0cd322479f069a59373eba788d082e24e631b3f/learn-pr/wwl-azure/migrate-to-devops/2-what-is-azure-devops.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="devx-track-dotnet" name="ms.custom"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/2-what-is-azure-devops.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.what-is-azure-devops" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2023-06-29 05:06 PM" name="updated_at"/>
+   <meta content="8df79542-b167-e6a9-398f-6ed66c8299f0" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/2-what-is-azure-devops.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/2-what-is-azure-devops" rel="canonical"/>
+   <title>
+    What is Azure DevOps? - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			contributors: [
+						{ name: "alexbuckgit", url: "https://github.com/alexbuckgit" }
+],
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/2-what-is-azure-devops">
+             What is Azure DevOps?
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.what-is-azure-devops">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             2 minutes
+            </li>
+           </ul>
+           <p>
+            Azure DevOps is a Software as a service (SaaS) platform from Microsoft that provides an end-to-end DevOps toolchain for developing and deploying software.
+           </p>
+           <p>
+            It also integrates with the most-leading tools on the market and is an excellent option for orchestrating a DevOps toolchain.
+           </p>
+           <h2 id="what-does-azure-devops-provide">
+            What does Azure DevOps provide?
+           </h2>
+           <p>
+            Azure DevOps includes a range of services covering the complete development life cycle.
+           </p>
+           <ul>
+            <li>
+             Azure Boards: agile planning, work item tracking, visualization, and reporting tool.
+            </li>
+            <li>
+             Azure Pipelines: a language, platform, and cloud-agnostic CI/CD platform-supporting containers or Kubernetes.
+            </li>
+            <li>
+             Azure Repos: provides cloud-hosted private git repos.
+            </li>
+            <li>
+             Azure Artifacts: provides integrated package management with support for Maven, npm, Python, and NuGet package feeds from public or private sources.
+            </li>
+            <li>
+             Azure Test Plans: provides an integrated planned and exploratory testing solution.
+            </li>
+           </ul>
+           <p>
+            Also, you can use Azure DevOps to orchestrate third-party tools.
+           </p>
+           <h2 id="what-if-we-are-not-a-microsoft--microsoft-net-organization">
+            What if we are not a Microsoft / Microsoft .NET organization?
+           </h2>
+           <p>
+            Azure DevOps is not focused on organizations that are end-to-end Microsoft or Windows.
+           </p>
+           <p>
+            Azure DevOps provides a platform that is:
+           </p>
+           <ul>
+            <li>
+             Flexible: you do not have to go 'all in' on Azure DevOps. It is possible to adopt each of the services independently and integrate them with your existing toolchain; most popular tools are supported.
+            </li>
+            <li>
+             Cross-Platform: designed to work with any platform (Linux, macOS, and Windows). Or language (including Node.js, Python, Java, PHP, Ruby, C/C++, .NET, Android, and iOS apps). Azure DevOps is not aimed at organizations building and shipping on the Microsoft technology stack.
+            </li>
+            <li>
+             Cloud Agnostic: continuous delivery is supported to AWS, GCP, and Azure.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="What is GitHub? - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/3-what-is-github" property="og:url"/>
+  <meta content="What is GitHub?" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="What is GitHub?" name="description"/>
+   <meta content="991ce07b-6f10-ca5f-d1e0-b623af25e84e" name="document_id"/>
+   <meta content="6026ef95-67f4-7adc-dbfc-e3bfea09061a" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/3-what-is-github.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/3-what-is-github.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.what-is-github" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="2081b5fe-537f-5a03-a10c-41a2b13a9565" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/3-what-is-github.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/3-what-is-github" rel="canonical"/>
+   <title>
+    What is GitHub? - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/3-what-is-github">
+             What is GitHub?
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.what-is-github">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            GitHub is a Software as a service (SaaS) platform from Microsoft that provides Git-based repositories and DevOps tooling for developing and deploying software.
+           </p>
+           <p>
+            It has a wide range of integrations with other leading tools.
+           </p>
+           <h2 id="what-does-github-provide">
+            What does GitHub provide?
+           </h2>
+           <p>
+            GitHub provides a range of services for software development and deployment.
+           </p>
+           <ul>
+            <li>
+             <strong>
+              Codespaces:
+             </strong>
+             Provides a cloud-hosted development environment (based on Visual Studio Code) that can be operated from within a browser or external tools. Eases cross-platform development.
+            </li>
+            <li>
+             <strong>
+              Repos:
+             </strong>
+             Public and private repositories based upon industry-standard Git commands.
+            </li>
+            <li>
+             <strong>
+              Actions:
+             </strong>
+             Allows for the creation of automation workflows. These workflows can include environment variables and customized scripts.
+            </li>
+            <li>
+             <strong>
+              Packages:
+             </strong>
+             The majority of the world's open-source projects are already contained in GitHub repositories. GitHub makes it easy to integrate with this code and with other third-party offerings.
+            </li>
+            <li>
+             <strong>
+              Security:
+             </strong>
+             Provides detailed code scanning and review features, including automated code review assignment.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Explore an authorization and access strategy - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/4-explore-authorization-access-strategy" property="og:url"/>
+  <meta content="Explore an authorization and access strategy" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Explore an authorization and access strategy" name="description"/>
+   <meta content="587b1ee6-9b0a-4c1c-3e7b-691fa91bb5e5" name="document_id"/>
+   <meta content="1d38f45c-9dc4-b42a-4b7e-e6f77e7fb526" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/4-explore-authorization-access-strategy.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/4-explore-authorization-access-strategy.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.explore-authorization-access-strategy" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="30784705-3a14-f9fb-4fb4-86979d8b540c" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/4-explore-authorization-access-strategy.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/4-explore-authorization-access-strategy" rel="canonical"/>
+   <title>
+    Explore an authorization and access strategy - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/4-explore-authorization-access-strategy">
+             Explore an authorization and access strategy
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.explore-authorization-access-strategy">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             3 minutes
+            </li>
+           </ul>
+           <p>
+            Azure DevOps Services uses enterprise-grade authentication. To protect and secure your data, you can use:
+           </p>
+           <ul>
+            <li>
+             Microsoft account.
+            </li>
+            <li>
+             GitHub account.
+            </li>
+            <li>
+             Microsoft Entra ID.
+            </li>
+           </ul>
+           <p>
+            Tools like Visual Studio and Azure DevOps natively support the use of Microsoft Accounts and Microsoft Entra ID. Eclipse can also support this form of authentication if you install a Team Explorer Everywhere plug-in.
+           </p>
+           <h2 id="personal-access-tokens">
+            Personal access tokens
+           </h2>
+           <p>
+            Use personal access tokens (PAT) for tools that don't directly support Microsoft accounts or Microsoft Entra ID for authentication. You can use it if you want them to integrate with Azure DevOps.
+           </p>
+           <p>
+            For example, tools like:
+           </p>
+           <ul>
+            <li>
+             Git-based repositories.
+            </li>
+            <li>
+             NuGet.
+            </li>
+            <li>
+             Xcode.
+             <br/>
+            </li>
+           </ul>
+           <p>
+            These tokens can be set up using Git Credential managers, or you can create them manually.
+           </p>
+           <p>
+            Personal access tokens are also helpful when establishing access to command-line tools, external tools, and tasks in build pipelines.
+           </p>
+           <p>
+            Also, when calling REST-based APIs, you don't have a UI popping out to do the authentication. When access is no longer required, you can revoke the personal access token.
+           </p>
+           <h2 id="security-groups">
+            Security groups
+           </h2>
+           <p>
+            Azure DevOps is pre-configured with default security groups.
+           </p>
+           <p>
+            Default permissions are assigned to the default security groups. You can also configure access at the organization, collection, and project or object levels.
+           </p>
+           <p>
+            In the organization settings in Azure DevOps, you can configure app access policies. Based on your security policies, you might allow alternate authentication methods, enable third-party applications to access via OAuth, or even allow anonymous access to some projects.
+           </p>
+           <p>
+            For even tighter control, you can use Conditional Access policies. These offer simple ways to help secure resources such as Azure DevOps when using Microsoft Entra ID for authentication.
+           </p>
+           <h2 id="multifactor-authentication">
+            Multifactor authentication
+           </h2>
+           <p>
+            Conditional Access policies such as multifactor authentication can help to minimize the risk of compromised credentials.
+           </p>
+           <p>
+            As part of a Conditional Access policy, you might require:
+           </p>
+           <ul>
+            <li>
+             Security group membership.
+            </li>
+            <li>
+             A location or network identity.
+            </li>
+            <li>
+             A specific operating system.
+            </li>
+            <li>
+             A managed device or other criteria.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Migrate or integrate existing work management tools - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/5-migrate-integrate-existing-work-management-tools" property="og:url"/>
+  <meta content="Migrate or integrate existing work management tools" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Migrate or integrate existing work management tools" name="description"/>
+   <meta content="74aa57d0-6c42-40ef-7788-50e585b014b4" name="document_id"/>
+   <meta content="2cdb99c1-0110-3ee7-97ca-653ec4eff9dc" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/5-migrate-integrate-existing-work-management-tools.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/5-migrate-integrate-existing-work-management-tools.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.migrate-integrate-existing-work-management-tools" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="b6d7e130-7601-cb54-3e24-b8f055464700" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/5-migrate-integrate-existing-work-management-tools.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/5-migrate-integrate-existing-work-management-tools" rel="canonical"/>
+   <title>
+    Migrate or integrate existing work management tools - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/5-migrate-integrate-existing-work-management-tools">
+             Migrate or integrate existing work management tools
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.migrate-integrate-existing-work-management-tools">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             2 minutes
+            </li>
+           </ul>
+           <p>
+            Both Azure DevOps and GitHub can be integrated with different kinds of work management tools.
+           </p>
+           <p>
+            As an example, in the Visual Studio Marketplace, Microsoft offers Trello integration tooling.
+           </p>
+           <p>
+            Migrating from other work management tools to Azure DevOps takes considerable planning.
+           </p>
+           <p>
+            Most work management tools are highly configurable by the end user. There might not be a tool available that will do the migration without further configuration.
+           </p>
+           <h2 id="jira">
+            Jira
+           </h2>
+           <p>
+            Jira is a commonly used work management tool.
+           </p>
+           <p>
+            In the Visual Studio Marketplace, Solidify offers a tool for Jira to Azure DevOps migration. It migrates in two phases. Jira issues are exported to files, and then the files are imported to Azure DevOps.
+           </p>
+           <p>
+            If you decide to write the migration code yourself, the following blog post provides a sample code that might help you get started:
+            <a data-linktype="external" href="http://www.azurefieldnotes.com/2018/10/01/migrate-your-project-from-jira-to-azure-devops/">
+             Migrate your project from Jira to Azure DevOps
+            </a>
+            .
+           </p>
+           <h2 id="other-applications">
+            Other applications
+           </h2>
+           <p>
+            Third-party organizations offer commercial tooling to assist with migrating other work management tools like:
+           </p>
+           <ul>
+            <li>
+             Aha.
+            </li>
+            <li>
+             BugZilla.
+            </li>
+            <li>
+             ClearQuest.
+            </li>
+            <li>
+             And others to Azure DevOps.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Migrate or integrate existing test management tools - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/6-migrate-integrate-existing-test-management-tools" property="og:url"/>
+  <meta content="Migrate or integrate existing test management tools" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Migrate or integrate existing test management tools" name="description"/>
+   <meta content="2abaf0dd-d658-1bd1-01f4-5f1112df636d" name="document_id"/>
+   <meta content="51b5c2ad-5d04-7383-4239-16c3ec6cf396" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/6-migrate-integrate-existing-test-management-tools.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/6-migrate-integrate-existing-test-management-tools.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.migrate-integrate-existing-test-management-tools" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="92382ca0-e66d-3358-dcce-aefcb5d1d45f" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/6-migrate-integrate-existing-test-management-tools.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/6-migrate-integrate-existing-test-management-tools" rel="canonical"/>
+   <title>
+    Migrate or integrate existing test management tools - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/6-migrate-integrate-existing-test-management-tools">
+             Migrate or integrate existing test management tools
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.migrate-integrate-existing-test-management-tools">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            Azure Test Plans track manual testing for sprints and milestones, allowing you to follow when that testing is complete.
+           </p>
+           <p>
+            Azure DevOps also has a Test Feedback extension available in the Visual Studio Marketplace. The extension is used to help teams do exploratory testing and provide feedback.
+           </p>
+           <p>
+            All team members and other stakeholders can use the extension to submit bugs or provide feedback. For example:
+           </p>
+           <ul>
+            <li>
+             Developers.
+            </li>
+            <li>
+             Product owners.
+            </li>
+            <li>
+             Managers.
+            </li>
+            <li>
+             UX.
+            </li>
+            <li>
+             UI engineers.
+            </li>
+            <li>
+             Marketing teams.
+            </li>
+            <li>
+             Early adopters.
+            </li>
+           </ul>
+           <p>
+            For load tests, you can use Azure Load Testing. For more information, see
+            <a data-linktype="absolute-path" href="/en-us/azure/load-testing/overview-what-is-azure-load-testing">
+             What is Azure Load Testing?
+            </a>
+            .
+           </p>
+           <h3 id="other-helpful-testing-tools">
+            Other helpful testing tools:
+           </h3>
+           <p>
+            Apache JMeter is open-source software written in Java and designed to load test, and measure performance.
+           </p>
+           <p>
+            Pester is a tool that can automate the testing of PowerShell code.
+           </p>
+           <p>
+            SoapUI is another testing framework for SOAP and REST testing.
+           </p>
+           <p>
+            If you are using Microsoft Test Manager, you should plan to migrate to Azure Test Plans instead.
+           </p>
+           <p>
+            For more information, search for Test Management at Visual Studio Marketplace.
+           </p>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Design a license management strategy - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/7-design-license-management-strategy" property="og:url"/>
+  <meta content="Design a license management strategy" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Design a license management strategy" name="description"/>
+   <meta content="8002138f-1f83-74cd-42d3-d8e223e2d764" name="document_id"/>
+   <meta content="979c2726-05f8-3332-589d-3305588be0df" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/7-design-license-management-strategy.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/7-design-license-management-strategy.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.design-license-management-strategy" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="640106a7-e08e-3620-be5e-9e8be20d94b4" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/7-design-license-management-strategy.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/7-design-license-management-strategy" rel="canonical"/>
+   <title>
+    Design a license management strategy - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/7-design-license-management-strategy">
+             Design a license management strategy
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.design-license-management-strategy">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            When designing a license management strategy, you first need to understand your progress in the DevOps implementation phase.
+           </p>
+           <p>
+            If you have a draft of the architecture, you're planning for the DevOps implementation; you already know part of the resources to consume.
+           </p>
+           <p>
+            For example, you started with a version control-implementing Git and created some pipelines to build and release your code.
+           </p>
+           <p>
+            If you have multiple teams building their solutions, you don't want to wait in the queue to start building yours.
+           </p>
+           <p>
+            Probably, you want to pay for parallel jobs and make your builds run in parallel without depending on the queue availability.
+           </p>
+           <p>
+            <strong>
+             To consider:
+            </strong>
+           </p>
+           <ul>
+            <li>
+             What phase are you in?
+            </li>
+            <li>
+             How many people are using the feature?
+            </li>
+            <li>
+             How long are you willing to wait if in the queue for pipelines? Is this urgent? Is this a validation only?
+            </li>
+            <li>
+             Should all users access all features? Are they Stakeholders? Basic users? Do they already have a Visual Studio license?
+            </li>
+            <li>
+             Do you have an advanced Package Management strategy? Maybe you need more space for Artifacts.
+            </li>
+           </ul>
+           <p>
+            For the latest, most up-to-date Azure DevOps pricing information, visit
+            <a data-linktype="external" href="https://azure.microsoft.com/pricing/details/devops/azure-devops-services/">
+             Azure DevOps Pricing
+            </a>
+            .
+           </p>
+           <p>
+            For the latest, most up-to-date GitHub pricing information, visit
+            <a data-linktype="external" href="https://github.com/pricing/">
+             GitHub Pricing
+            </a>
+            .
+           </p>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Knowledge check - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/8-knowledge-check" property="og:url"/>
+  <meta content="Knowledge check" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Knowledge check" name="description"/>
+   <meta content="ddf2d9f6-645c-c5d5-fe2f-01ad60305ff8" name="document_id"/>
+   <meta content="124331ed-f43c-c442-5108-7ab31d3f6ec0" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="7ae5c2fe08cb682ca943c8a9d01675a97ef6984b" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/7ae5c2fe08cb682ca943c8a9d01675a97ef6984b/learn-pr/wwl-azure/migrate-to-devops/8-knowledge-check.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/8-knowledge-check.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.knowledge-check" name="uid"/>
+   <meta content="quiz" name="unit_completion_type"/>
+   <meta content="2023-10-18 05:02 PM" name="updated_at"/>
+   <meta content="0ecd4190-32e2-ee26-463d-ec8941b9b7d6" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/8-knowledge-check.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/8-knowledge-check" rel="canonical"/>
+   <title>
+    Knowledge check - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			contributors: [
+						{ name: "alexbuckgit", url: "https://github.com/alexbuckgit" }
+],
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/8-knowledge-check">
+             Knowledge check
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.knowledge-check">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             4 minutes
+            </li>
+           </ul>
+           <p>
+            Choose the best response for each question. Then select
+            <strong>
+             Check your answers
+            </strong>
+            .
+           </p>
+           <h2>
+            Check your knowledge
+           </h2>
+           <form aria-label="Knowledge check" class="quiz-form margin-top-xs" data-bi-name="quiz" role="form">
+            <fieldset class="field">
+             <div role="list">
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-1" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-1">
+                 <span class="font-weight-semibold">
+                  1.
+                 </span>
+                 <p>
+                  Which of the following choices isn't an Azure DevOps service/feature?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-0" name="0" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure Boards.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-1" name="0" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure Monitor.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-2" name="0" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure Repos.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-2" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-2">
+                 <span class="font-weight-semibold">
+                  2.
+                 </span>
+                 <p>
+                  Which of the following is a correct statement about Azure DevOps?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-0" name="1" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure DevOps only works in on-premises environments. If you want to use a cloud service, you need to choose GitHub.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-1" name="1" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure DevOps and GitHub are only available in the cloud.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-2" name="1" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Azure DevOps and GitHub provide options to work on-premises and in the cloud.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-3" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-3">
+                 <span class="font-weight-semibold">
+                  3.
+                 </span>
+                 <p>
+                  Which of the following choices does Azure DevOps Services enterprise-grade authentication support?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-0" name="2" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Microsoft Account, Microsoft Entra ID, GitHub Account.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-1" name="2" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Microsoft Account, Microsoft Entra ID.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-2" name="2" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    GitHub Account.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <button class="button button-primary button-filled margin-top-xs" data-bi-name="check-answers" type="submit">
+              Check your answers
+             </button>
+             <p class="font-size-sm color-danger font-weight-semibold margin-top-xxs is-hidden" id="unanswered-question-error" role="alert">
+              You must answer all questions before checking your work.
+             </p>
+             <p class="visually-hidden" id="screen-reader-text">
+             </p>
+            </fieldset>
+           </form>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Summary - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/9-summary" property="og:url"/>
+  <meta content="Summary" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Summary" name="description"/>
+   <meta content="7d48fdd5-3854-470a-9528-e459ce7fb692" name="document_id"/>
+   <meta content="9df86cea-8069-d29f-db71-b1d7162427d7" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="d214efd919978e52eb01ada326b01dd843a64d8a" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/d214efd919978e52eb01ada326b01dd843a64d8a/learn-pr/wwl-azure/migrate-to-devops/9-summary.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="11/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/migrate-to-devops/9-summary.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.migrate-to-devops.summary" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-11-18 06:01 PM" name="updated_at"/>
+   <meta content="a99baf76-4a29-f53e-8143-34d681fb5e42" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/migrate-to-devops/9-summary.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/9-summary" rel="canonical"/>
+   <title>
+    Summary - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/migrate-to-devops/9-summary">
+             Summary
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.migrate-to-devops.summary">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            This module explored the basics of Azure DevOps and GitHub and how to start using them to implement DevOps.
+           </p>
+           <p>
+            You learned how to describe the benefits and usage of:
+           </p>
+           <ul>
+            <li>
+             Design a tool integration strategy.
+            </li>
+            <li>
+             Design a license management strategy (for example, Azure DevOps and GitHub users).
+            </li>
+            <li>
+             Design a strategy for end-to-end traceability from work items to working software.
+            </li>
+            <li>
+             Design an authentication and access strategy.
+            </li>
+            <li>
+             Design a strategy for integrating on-premises and cloud resources.
+            </li>
+           </ul>
+           <h2 id="learn-more">
+            Learn more
+           </h2>
+           <ul>
+            <li>
+             <a data-linktype="external" href="https://azure.microsoft.com/services/devops/">
+              Azure DevOps Services | Microsoft Azure
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="external" href="https://github.com/features">
+              Features | GitHub
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="external" href="https://azure.microsoft.com/pricing/calculator/">
+              Pricing Calculator | Microsoft Azure
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="absolute-path" href="/en-us/azure/devops/migrate/migration-overview?view=azure-devops">
+              Azure DevOps Server to Services Migration overview - Azure DevOps | Microsoft Docs
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="external" href="https://azure.microsoft.com/pricing/details/devops/azure-devops-services/">
+              Azure DevOps Services Pricing | Microsoft Azure
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="external" href="https://github.com/pricing/">
+              GitHub Pricing
+             </a>
+             .
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>

@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Introduction - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/1-introduction" property="og:url"/>
+  <meta content="Introduction" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Introduction" name="description"/>
+   <meta content="4550b92d-22cb-c400-b611-1392b36258f1" name="document_id"/>
+   <meta content="d4030ceb-7820-b581-70b2-50efb89f8e2e" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/1-introduction.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/1-introduction.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.introduction" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="c39891d8-259a-e8f7-112d-d5ae83310c8f" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/1-introduction.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/1-introduction" rel="canonical"/>
+   <title>
+    Introduction - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/1-introduction">
+             Introduction
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.introduction">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            You can think of source control as an essential everyday practice. Versioning is a standard part of the developer's routine and, if used correctly, can save organizations enormous costs and resources.
+           </p>
+           <p>
+            The source control is a common-sense aspect of programming. It is essential from time to time to look at why we do what we do and how versioning impacts the entire value stream at an organization.
+           </p>
+           <p>
+            This module introduces you to the basics of source control, exploring benefits and best practices.
+           </p>
+           <h2 id="learning-objectives">
+            Learning objectives
+           </h2>
+           <p>
+            After completing this module, students and professionals can:
+           </p>
+           <ul>
+            <li>
+             Understand source control.
+            </li>
+            <li>
+             Apply best practices for source control.
+            </li>
+            <li>
+             Describe the benefits of using source control.
+            </li>
+           </ul>
+           <h2 id="prerequisites">
+            Prerequisites
+           </h2>
+           <ul>
+            <li>
+             Understanding of what DevOps is and its concepts.
+            </li>
+            <li>
+             Familiarity with version control principles is helpful but is not necessary.
+            </li>
+            <li>
+             Beneficial to have experience in an organization that delivers software.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Explore DevOps foundational practices - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/2-explore-devops-foundational-practices" property="og:url"/>
+  <meta content="Explore DevOps foundational practices" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Explore DevOps foundational practices" name="description"/>
+   <meta content="d224ea39-fc58-18ce-97fc-7cb0261ee183" name="document_id"/>
+   <meta content="a639b048-53e0-4a75-bfc9-3d64f4aa2cb2" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/2-explore-devops-foundational-practices.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/2-explore-devops-foundational-practices.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.explore-devops-foundational-practices" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="1a67536e-18b2-05e5-1833-1123f89ee396" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/2-explore-devops-foundational-practices.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/2-explore-devops-foundational-practices" rel="canonical"/>
+   <title>
+    Explore DevOps foundational practices - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/2-explore-devops-foundational-practices">
+             Explore DevOps foundational practices
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.explore-devops-foundational-practices">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             3 minutes
+            </li>
+           </ul>
+           <p>
+            The
+            <a data-linktype="external" href="https://puppet.com/resources/report/2021-state-of-devops-report">
+             State of DevOps Report 2021
+            </a>
+            highlights version control in almost all stages of DevOps evolution.
+           </p>
+           <p>
+            <span class="mx-imgBorder">
+             <img alt="Foundational practices and the five stages of DevOps evolution. Also, version control is highlighted in several stages. Zero to two." data-linktype="relative-path" src="img/foundational-practices-five-stages-zero-two-5bd71abb.png"/>
+            </span>
+           </p>
+           <p>
+            It is helpful for non-developers in an organization to understand the fundamentals of the discipline.
+           </p>
+           <p>
+            Also, it is so deeply rooted in the daily life of software engineers. Essential if those individuals decide which version control tools and platforms to use.
+           </p>
+           <p>
+            <span class="mx-imgBorder">
+             <img alt="Foundational practices and the five stages of DevOps evolution. Also, version control is highlighted in several stages. Two to five." data-linktype="relative-path" src="img/foundational-practices-five-stages-tree-five-00bc5230.png"/>
+            </span>
+           </p>
+           <p>
+            Version control is essential for all software development projects and is vital at large businesses and enterprises.
+           </p>
+           <p>
+            Enterprises have many stakeholders. For example:
+           </p>
+           <ul>
+            <li>
+             Distributed teams.
+            </li>
+            <li>
+             Strict processes and workflows.
+            </li>
+            <li>
+             Siloed organizations.
+            </li>
+            <li>
+             Hierarchical organizations.
+            </li>
+           </ul>
+           <p>
+            All those characteristics represent coordination and integration challenges when it comes to merging and deploying code.
+           </p>
+           <p>
+            Companies within highly regulated industries need a practical way to ensure that all standards are met appropriately and mitigate risk—for example, banking and healthcare.
+           </p>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="What is source control? - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/3-what-source-control" property="og:url"/>
+  <meta content="What is source control?" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="What is source control?" name="description"/>
+   <meta content="7461bf00-a851-4920-1405-70f8af7b818d" name="document_id"/>
+   <meta content="afd6947b-353a-5c3e-16fb-46877fa7ffab" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/3-what-source-control.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/3-what-source-control.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.what-source-control" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="da454e82-4e5c-8212-afcb-3189b39d4745" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/3-what-source-control.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/3-what-source-control" rel="canonical"/>
+   <title>
+    What is source control? - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/3-what-source-control">
+             What is source control?
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.what-source-control">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             2 minutes
+            </li>
+           </ul>
+           <p>
+            A Source control system (or version control system) allows developers to collaborate on code and track changes. Use version control to save your work and coordinate code changes across your team. Source control is an essential tool for multi-developer projects.
+           </p>
+           <p>
+            The version control system saves a snapshot of your files (history) so that you can review and even roll back to any version of your code with ease. Also, it helps to resolve conflicts when merging contributions from multiple sources.
+           </p>
+           <p>
+            For most software teams, the source code is a repository of invaluable knowledge and understanding about the problem domain that the developers have collected and refined through careful effort.
+           </p>
+           <p>
+            Source control protects source code from catastrophe and the casual degradation of human error and unintended consequences.
+           </p>
+           <p>
+            <span class="mx-imgBorder">
+             <img alt="Source control" data-linktype="relative-path" src="img/source-control-f1d31c38.png"/>
+            </span>
+           </p>
+           <p>
+            Without version control, you're tempted to keep multiple copies of code on your computer. It could be dangerous. Easy to change or delete a file in the wrong code copy, potentially losing work.
+           </p>
+           <p>
+            Version control systems solve this problem by managing all versions of your code but presenting you with a single version at a time.
+           </p>
+           <p>
+            Tools and processes alone aren't enough to accomplish the above, such as adopting Agile, Continuous Integration, and DevOps. Believe it or not, all rely on a solid version control practice.
+           </p>
+           <p>
+            Version control is about keeping track of every change to software assets—tracking and managing the who, what, and when. Version control is the first step needed to assure quality at the source, ensure flow and pull value, and focus on the process. All of these create value not just for the software teams but ultimately for the customer.
+           </p>
+           <p>
+            Version control is a solution for managing and saving changes made to any manually created assets. If changes are made to the source code, you can go back in time and easily roll back to previous-working versions.
+           </p>
+           <p>
+            Version control tools will enable you to see who made changes, when, and what exactly was changed.
+           </p>
+           <p>
+            Version control also makes experimenting easy and, most importantly, makes collaboration possible. Without version control, collaborating over source code would be a painful operation.
+           </p>
+           <p>
+            There are several perspectives on version control.
+           </p>
+           <ul>
+            <li>
+             <p>
+              For developers, it's a daily enabler for work and collaboration to happen. It's part of the daily job, one of the most-used tools.
+             </p>
+            </li>
+            <li>
+             <p>
+              For management, the critical value of version control is in:
+             </p>
+             <ul>
+              <li>
+               IP security.
+              </li>
+              <li>
+               Risk management.
+              </li>
+              <li>
+               Time-to-market speed through Continuous Delivery, where version control is a fundamental enabler.
+              </li>
+             </ul>
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Explore benefits of source control - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/4-explore-benefits-of" property="og:url"/>
+  <meta content="Explore benefits of source control" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Explore benefits of source control" name="description"/>
+   <meta content="c2dd3859-907e-5cb4-8b45-0722cbe84f0b" name="document_id"/>
+   <meta content="7e51543c-7be1-afce-03ae-5c972666f4ed" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/4-explore-benefits-of.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/4-explore-benefits-of.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.explore-benefits-of" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="986250e0-efe9-6d65-db6d-0f268cf74767" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/4-explore-benefits-of.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/4-explore-benefits-of" rel="canonical"/>
+   <title>
+    Explore benefits of source control - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/4-explore-benefits-of">
+             Explore benefits of source control
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.explore-benefits-of">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             3 minutes
+            </li>
+           </ul>
+           <p>
+            "Code does not exist unless it is committed into source control. Source control is the fundamental enabler of continuous delivery."
+           </p>
+           <p>
+            <span class="mx-imgBorder">
+             <img alt="Pipeline with version control, build, unit test, deploy, auto test, deploy to production, and measure and validate." data-linktype="relative-path" src="img/pipeline-phases-808e4101.png"/>
+            </span>
+           </p>
+           <p>
+            Whether writing code professionally or personally, you should always version your code using a source control management system. Some of the advantages of using source control are,
+           </p>
+           <ul>
+            <li>
+             <strong>
+              Create workflows
+             </strong>
+             . Version control workflows prevent the chaos of everyone using their development process with different and incompatible tools. Version control systems provide process enforcement and permissions, so everyone stays on the same page.
+            </li>
+            <li>
+             <strong>
+              Work with versions
+             </strong>
+             . Every version has a description in the form of a comment. These descriptions help you follow changes in your code by version instead of by individual file changes. Code stored in versions can be viewed and restored from version control at any time as needed. It makes it easy to base new work on any version of code.
+            </li>
+            <li>
+             <strong>
+              Collaboration
+             </strong>
+             . Version control synchronizes versions and makes sure that your changes do not conflict with other changes from your team. Your team relies on version control to help resolve and prevent conflicts, even when people make changes simultaneously.
+            </li>
+            <li>
+             <strong>
+              Maintains history of changes
+             </strong>
+             . Version control keeps a record of changes as your team saves new versions of your code. This history can be reviewed to find out who, why, and when changes were made. The history gives you the confidence to experiment since you can roll back to a previous good version at any time. The history lets your base work from any code version, such as fixing a bug in an earlier release.
+            </li>
+            <li>
+             <strong>
+              Automate tasks
+             </strong>
+             . Version control automation features save your team time and generate consistent results. Automate testing, code analysis, and deployment when new versions are saved to version control.
+            </li>
+           </ul>
+           <h2 id="common-software-development-values">
+            Common software development values
+           </h2>
+           <ul>
+            <li>
+             <strong>
+              Reusability
+             </strong>
+             – why do the same thing twice? Reuse of code is a common practice and makes building on existing assets simpler.
+            </li>
+            <li>
+             <strong>
+              Traceability
+             </strong>
+             – Audits are not just for fun; in many industries, it is a legal matter. All activities must be traced, and managers can produce reports when needed. Traceability also makes debugging and identifying root cause easier. Additionally, it helps with feature reuse as developers can link requirements to implementation.
+            </li>
+            <li>
+             <strong>
+              Manageability
+             </strong>
+             – Can team leaders define and enforce workflows, review rules, create quality gates and enforce QA throughout the lifecycle?
+            </li>
+            <li>
+             <strong>
+              Efficiency
+             </strong>
+             – are we using the right resources for the job, minimizing time and effort? This one is self-explanatory.
+            </li>
+            <li>
+             <strong>
+              Collaboration
+             </strong>
+             – When teams work together, quality tends to improve. We catch one another's mistakes and can build on each other's strengths.
+            </li>
+            <li>
+             <strong>
+              Learning
+             </strong>
+             – Organizations benefit when they invest in employees learning and growing. It is important for onboarding new team members, the lifelong learning of seasoned members, and the opportunity for workers to contribute to the bottom line and the industry.
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Explore best practices for source control - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/5-explore-best-practices-for" property="og:url"/>
+  <meta content="Explore best practices for source control" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Explore best practices for source control" name="description"/>
+   <meta content="c4d30c38-6ca2-df63-0b04-fe8c241edd39" name="document_id"/>
+   <meta content="c27771b6-6290-e000-fa3d-7ed3ba0e287b" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/5-explore-best-practices-for.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/5-explore-best-practices-for.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.explore-best-practices-for" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="169bfd12-eade-f642-4890-3e36e6154c7b" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/5-explore-best-practices-for.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/5-explore-best-practices-for" rel="canonical"/>
+   <title>
+    Explore best practices for source control - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/5-explore-best-practices-for">
+             Explore best practices for source control
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.explore-best-practices-for">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             2 minutes
+            </li>
+           </ul>
+           <ul>
+            <li>
+             <strong>
+              Make small changes
+             </strong>
+             . In other words, commit early and commit often. Be careful not to commit any unfinished work that could break the build.
+            </li>
+            <li>
+             <strong>
+              Do not commit personal files
+             </strong>
+             . It could include application settings or SSH keys. Often personal files are committed accidentally but cause problems later when other team members work on the same code.
+            </li>
+            <li>
+             <strong>
+              Update often and right before pushing to avoid merge conflicts
+             </strong>
+             .
+            </li>
+            <li>
+             <strong>
+              Verify your code change before pushing it to a repository
+             </strong>
+             ; ensure it compiles and tests are passing.
+            </li>
+            <li>
+             <strong>
+              Pay close attention to commit messages, as it will tell you why a change was made
+             </strong>
+             . Consider committing messages as a mini form of documentation for the change.
+            </li>
+            <li>
+             <strong>
+              Link code changes to work items
+             </strong>
+             . It will concretely link what was created to why it was created—or modified by providing traceability across requirements and code changes.
+            </li>
+            <li>
+             <strong>
+              No matter your background or preferences, be a team player and follow agreed conventions and workflows
+             </strong>
+             . Consistency is essential and helps ensure quality, making it easier for team members to pick up where you left off, review your code, debug, and so on.
+            </li>
+           </ul>
+           <p>
+            Using version control of some kind is necessary for any organization, and following the guidelines can help developers avoid needless time spent fixing errors and mistakes.
+           </p>
+           <p>
+            These practices also help organizations reap more significant benefits from having a good version control system.
+           </p>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Knowledge check - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/6-knowledge-check" property="og:url"/>
+  <meta content="Knowledge check" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Knowledge check" name="description"/>
+   <meta content="5fe97bd7-503b-f6ab-e2a3-0f8577135871" name="document_id"/>
+   <meta content="e7c2f038-058e-5cac-3021-903d4f4242cd" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/6-knowledge-check.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/6-knowledge-check.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.knowledge-check" name="uid"/>
+   <meta content="quiz" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="5ec9255e-2174-3dd2-044b-72f5e3ac965a" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/6-knowledge-check.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/6-knowledge-check" rel="canonical"/>
+   <title>
+    Knowledge check - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/6-knowledge-check">
+             Knowledge check
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.knowledge-check">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             5 minutes
+            </li>
+           </ul>
+           <p>
+            Choose the best response for each question. Then select
+            <strong>
+             Check your answers
+            </strong>
+            .
+           </p>
+           <h2>
+            Check your knowledge
+           </h2>
+           <form aria-label="Knowledge check" class="quiz-form margin-top-xs" data-bi-name="quiz" role="form">
+            <fieldset class="field">
+             <div role="list">
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-1" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-1">
+                 <span class="font-weight-semibold">
+                  1.
+                 </span>
+                 <p>
+                  Which of the following choices isn't a benefit of source control?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-0" name="0" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Manageability.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-1" name="0" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Efficiency.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-0-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-0-2" name="0" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Accountability.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-2" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-2">
+                 <span class="font-weight-semibold">
+                  2.
+                 </span>
+                 <p>
+                  Which of the following choices isn't a source control best practice?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-0" name="1" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Make small changes.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-1" name="1" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Commit personal and secure files.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-1-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-1-2" name="1" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Link code changes to work items.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="quiz-question" data-bi-name="question" role="listitem">
+               <div aria-labelledby="quiz-question-3" class="quiz-question-title font-size-md margin-top-sm margin-bottom-xs" role="radiogroup">
+                <div class="margin-top-sm margin-bottom-xs field-label" id="quiz-question-3">
+                 <span class="font-weight-semibold">
+                  3.
+                 </span>
+                 <p>
+                  Which of the following choices correctly describes one of the most valuable version control features?
+                 </p>
+                 <span class="required-indicator">
+                 </span>
+                </div>
+                <div class="field-body">
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-0">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-0" name="2" type="radio" value="0"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Version control is a solution for managing and saving changes made to manually created assets. If you make changes to the source code, you can go back in time and easily roll back to previous-working versions.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-1">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-1" name="2" type="radio" value="1"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Version control is a solution for automatically incrementing the version number for deployments.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                 <label class="quiz-choice display-flex padding-block-xxs padding-inline-xs margin-bottom-xxs radio" for="quiz-choice-2-2">
+                  <input class="radio-dot choice-input" id="quiz-choice-2-2" name="2" type="radio" value="2"/>
+                  <div class="margin-inline-sm radio-label-text">
+                   <p>
+                    Version control is a solution for managing and saving changes made to manually created assets. If you make changes to the source code, be careful, you can't go back in time and easily roll back to previous-working versions.
+                   </p>
+                  </div>
+                 </label>
+                 <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg">
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <button class="button button-primary button-filled margin-top-xs" data-bi-name="check-answers" type="submit">
+              Check your answers
+             </button>
+             <p class="font-size-sm color-danger font-weight-semibold margin-top-xxs is-hidden" id="unanswered-question-error" role="alert">
+              You must answer all questions before checking your work.
+             </p>
+             <p class="visually-hidden" id="screen-reader-text">
+             </p>
+            </fieldset>
+           </form>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html class="is-full hasPageActions hasBreadcrumb moduleunit has-default-focus theme-light" data-auth-status-determined="false" data-authenticated="false" data-css-variable-support="true" data-target="docs" dir="ltr" lang="en-us" x-ms-format-detection="none">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Summary - Training" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/7-summary" property="og:url"/>
+  <meta content="Summary" property="og:description"/>
+  <meta content="https://learn.microsoft.com/en-us/media/open-graph-image.png" property="og:image"/>
+  <meta content="Microsoft Learn" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="@MicrosoftLearn" name="twitter:site"/>
+  <meta content="light dark" name="color-scheme"/>
+  <meta content="wwlpublish" name="author">
+   <meta content="false" name="azure_sandbox"/>
+   <meta content="/learn/breadcrumb/toc.json" name="breadcrumb_path"/>
+   <meta content="true" name="clicktale"/>
+   <meta content="Docs.learn-pr" name="depot_name"/>
+   <meta content="Summary" name="description"/>
+   <meta content="dcc4ab29-6a03-90ba-1205-500e6b13c6db" name="document_id"/>
+   <meta content="1a8b0fb8-39cb-967c-2b12-257587247c45" name="document_version_independent_id"/>
+   <meta content="GitHub" name="feedback_system"/>
+   <meta content="ecee253b4b74f62ed2187455252f0ed102e1b661" name="git_commit_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/ecee253b4b74f62ed2187455252f0ed102e1b661/learn-pr/wwl-azure/introduction-to-source-control/7-summary.yml" name="gitcommit"/>
+   <meta content="false" name="labModal"/>
+   <meta content="en-us" name="locale"/>
+   <meta content="ja-jp" name="localization_scopes"/>
+   <meta content="ko-kr" name="localization_scopes"/>
+   <meta content="zh-cn" name="localization_scopes"/>
+   <meta content="zh-tw" name="localization_scopes"/>
+   <meta content="lumac" name="ms.author"/>
+   <meta content="03/18/2022" name="ms.date"/>
+   <meta content="learning-azure" name="ms.prod"/>
+   <meta content="interactive-tutorial" name="ms.topic"/>
+   <meta content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/wwl-azure/introduction-to-source-control/7-summary.yml" name="original_content_git_url"/>
+   <meta content="unit" name="page_kind"/>
+   <meta content="learn" name="page_type"/>
+   <meta content="noindex" name="ROBOTS"/>
+   <meta content="false" name="sandbox"/>
+   <meta content="ModuleUnit" name="schema"/>
+   <meta content="Docs" name="site_name"/>
+   <meta content="MSDocsHeader-Learn" name="uhfHeaderId"/>
+   <meta content="learn.wwl.introduction-to-source-control.summary" name="uid"/>
+   <meta content="view" name="unit_completion_type"/>
+   <meta content="2022-03-18 05:02 PM" name="updated_at"/>
+   <meta content="9b122973-0776-603d-7878-beac4faba217" name="persistent_id"/>
+   <meta content="https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/wwl-azure/introduction-to-source-control/7-summary.yml" name="github_feedback_content_git_url"/>
+   <link href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/7-summary" rel="canonical"/>
+   <title>
+    Summary - Training | Microsoft Learn
+   </title>
+   <link href="/_themes/docs.theme/master/en-us/_themes/styles/8b41fcf1.site-ltr.css " rel="stylesheet"/>
+   <script id="msdocs-script">
+    var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			feedbackHelpLinkType:'',
+			feedbackHelpLinkUrl:'',
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			contentWellNotification: '',
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: false,
+			hasBookmark: true,
+			hasShare: false,
+			isPermissioned: false,
+			isPrivateUnauthorized: false,
+			hasRecommendations: false,
+			mathjax: {
+			},
+		},
+		functions:{}
+	};
+   </script>
+   <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js">
+   </script>
+   <script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js">
+   </script>
+   <script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js">
+   </script>
+   <link crossorigin="" href="//mscom.demdex.net" rel="preconnect"/>
+   <link href="//target.microsoft.com" rel="dns-prefetch"/>
+   <link href="//microsoftmscompoc.tt.omtrdc.net" rel="dns-prefetch"/>
+   <link as="script" crossorigin="anonymous" href="/static/third-party/adobe-target/at-js/2.9.0/at.js" id="adobe-target-script" integrity="sha384-1/viVM50hgc33O2gOgkWz3EjiD/Fy/ld1dKYXJRUyjNYVEjSUGcSN+iPiQF7e4cu" rel="preload" type="application/javascript">
+    <script src="/_themes/docs.theme/master/en-us/_themes/scripts/8796d6e5.index-docs.js">
+    </script>
+   </link>
+  </meta>
+ </head>
+ <body dir="ltr" lang="en-us">
+  <div class="mainContainer uhf-container has-body-background-dark uhf-container is-full has-default-focus" data-bi-name="body">
+   <div class="columns has-large-gaps is-gapless-mobile is-gapless">
+    <!-- .primary-holder -->
+    <section class="primary-holder column is-full">
+     <!--div.columns -->
+     <div class="columns is-gapless-mobile has-large-gaps is-gapless">
+      <div class="column is-full" id="main-column">
+       <main class="" data-bi-name="content" dir="ltr" id="main" lang="en-us" role="main">
+        <!-- article-header -->
+        <!-- end article-header -->
+        <div>
+         <button class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button="" hidden="" type="button">
+          <span class="icon">
+           <span aria-hidden="true" class="docon docon-editor-list-bullet">
+           </span>
+          </span>
+          <span class="contents-expand-title">
+           Table of contents
+          </span>
+         </button>
+        </div>
+        <!-- end mobile-contents button  -->
+        <div class="content">
+         <div class="modular-content-container" data-target="docs">
+         </div>
+         <!-- <content> -->
+         <div class="modular-content-container has-body-background box">
+          <div class="section is-uniform position-relative" id="unit-inner-section">
+           <h1 class="margin-right-xxl-desktop">
+            <a href="https://learn.microsoft.com/en-us/training/modules/introduction-to-source-control/7-summary">
+             Summary
+            </a>
+           </h1>
+           <div class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive" data-progress-uid="learn.wwl.introduction-to-source-control.summary">
+            <div class="xp-tag-hexagon">
+             <span class="xp-tag-icon is-shown-complete docon docon-check">
+              <span class="visually-hidden">
+               Completed
+              </span>
+             </span>
+             <span class="xp-tag-xp">
+             </span>
+            </div>
+           </div>
+           <ul class="metadata page-metadata">
+            <li>
+             1 minute
+            </li>
+           </ul>
+           <p>
+            This module explored the basics of source control and how to work with it daily to benefit team collaboration and code maintenance.
+           </p>
+           <p>
+            You learned how to describe the benefits and usage of:
+           </p>
+           <ul>
+            <li>
+             Understand source control.
+            </li>
+            <li>
+             Apply best practices for source control.
+            </li>
+            <li>
+             Describe the benefits of using source control.
+            </li>
+           </ul>
+           <h2 id="learn-more">
+            Learn more
+           </h2>
+           <ul>
+            <li>
+             <a data-linktype="absolute-path" href="/en-us/azure/devops/user-guide/source-control">
+              Understand source control - Azure DevOps
+             </a>
+             .
+            </li>
+            <li>
+             <a data-linktype="external" href="https://docs.github.com/codespaces/developing-in-codespaces/using-source-control-in-your-codespace">
+              Using source control in your codespace - GitHub Docs
+             </a>
+             .
+            </li>
+           </ul>
+           <div class="modular-content-container is-hidden is-hidden-portrait" id="next-section">
+            <p class="margin-top-none" id="next-module">
+            </p>
+            <p>
+             <a class="button button-primary button-clear" data-linktype="absolute-path" href="/en-us/">
+              <span>
+               Continue
+              </span>
+              <span class="docon docon-chevron-right-light">
+              </span>
+             </a>
+            </p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-atomic="true" aria-live="assertive" aria-relevant="additions" class="visually-hidden" id="assertive-live-region" role="alert">
+        </div>
+        <div aria-atomic="true" aria-live="polite" aria-relevant="additions" class="visually-hidden" id="polite-live-region" role="status">
+        </div>
+        <!-- </content> -->
+       </main>
+       <div class="modular-content-container margin-block-xs">
+        <section class="feedback-section section is-full-height is-uniform padding-block-none position-relative">
+         <p class="font-weight-semibold">
+          Need help? See our
+          <a class="has-text-primary" data-bi-name="troubleshooting" id="troubleshooting-guide">
+           troubleshooting guide
+          </a>
+          or provide specific feedback by
+          <a class="has-text-primary" data-bi-name="feedback" id="module-unit-feedback-link">
+           reporting an issue
+          </a>
+          .
+         </p>
+        </section>
+       </div>
+       <div class="modular-content-container unit-page-module-rating margin-block-xs is-hidden">
+        <section class="unit-page-rating-section section is-full-height is-uniform padding-block-none position-relative">
+        </section>
+       </div>
+       <!-- recommendations section -->
+       <!-- end recommendations section -->
+       <!-- feedback section -->
+       <!-- end feedback section -->
+       <!-- feedback report section -->
+       <!-- end feedback report section -->
+       <div class="border-top is-visible-interactive has-default-focus margin-top-sm margin-top-none">
+       </div>
+      </div>
+     </div>
+     <!--end of div.columns -->
+    </section>
+    <!--end of .primary-holder -->
+    <!-- interactive container -->
+    <aside class="interactive-container is-visible-interactive column has-body-background-dark" id="interactive-container">
+    </aside>
+    <!-- end of interactive container -->
+   </div>
+  </div>
+  <!--end of .mainContainer -->
+  <section class="border-top has-default-focus is-hidden-interactive margin-top-sm margin-top-none">
+  </section>
+  <script crossorigin="anonymous" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" src="/static/third-party/MathJax/3.2.2/tex-mml-chtml.js">
+  </script>
+  <div aria-label="Action Panel" class="action-panel has-default-focus" id="action-panel" role="region" tabindex="-1">
+  </div>
+ </body>
+</html>
