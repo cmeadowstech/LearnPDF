@@ -1,6 +1,6 @@
 # Convert MSFT Learn paths to PDFs
 
-Script to convert MSFT Learn modules to PDFs. Might need more tweaking and testing, but at the moment it's working pretty well. Take a peak at the PDF folder for examples of converted PDFs from the Learn Path [AZ-400: Get started on a DevOps transformation journey](https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/)
+Script to convert MSFT Learn modules to PDFs. Might need more tweaking and testing, but at the moment it's working pretty well. Take a peak at the PDF folder for examples of converted PDFs all the Learn Paths for the AZ-400 Certification.
 
 ## Requirements
 1. Install pip dependencies from requirements.txt
