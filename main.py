@@ -192,12 +192,6 @@ def main(url):
         f"ebook-convert {args} --page-breaks-before '//h:h2[position()>1]' \
         --chapter '//h:h2' --use-auto-toc --level1-toc '//h:h2' --level2-toc '//h:h3' \
         --authors 'Microsoft' --title '{title.find('a').string}' --series '{series}'"
-    )'''
-    
-    os.system(
-        f"ebook-convert {args} --page-breaks-before '//h:h2[position()>1]' \
-        --chapter '//h:h2' --use-auto-toc --level1-toc '//h:h2' --level2-toc '//h:h3' \
-        --authors 'Microsoft' --title '{title.find('a').string}' --series '{series}'"
     )
 
 
