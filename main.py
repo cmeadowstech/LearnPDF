@@ -187,14 +187,6 @@ def main(url):
         series = str(sys.argv[3])
     except:
         series = "Microsoft Learn"
-
-    # Converts the HTML to PDF
-    '''os.system(
-        f"ebook-convert 'HTML/{fileName}.html' 'Export/{fileName}.pdf' --page-breaks-before '//h:h2[position()>1]' \
-        --chapter '//h:h2' --use-auto-toc --level1-toc '//h:h2' --level2-toc '//h:h3' \
-        --pdf-page-numbers --pretty-print --pdf-serif-family 'Bookerly' --base-font-size 10\
-        --authors 'Microsoft' --title '{title.find('a').string}' --series '{series}'"
-    )'''
     
     os.system(
         f"ebook-convert {args} --page-breaks-before '//h:h2[position()>1]' \
