@@ -1,5 +1,8 @@
 # Don't need to upload image files
-HTML/img
+HTML
+Export
+EPUB
+*bfg*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
