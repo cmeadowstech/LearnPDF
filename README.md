@@ -19,9 +19,17 @@ Once the requiremments are installed, you can simply run with the url as a comma
 python3 main.py 'https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/'
 ```
 
-Alternatively, you can pass a 'Series' name after the URL if you want to keep track of which Certfication the PDFs are for with your EBook manager.
+### Exporting to .epub
+
+The script takes a secondary argument that specifies whether or not you want to export a .pdf or .epub.
+
 ```
-python3 main.py 'https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/' 'AZ-400'
+python3 main.py 'https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/' 'epub'
+```
+
+You can also pass a 'Series' name after the file format if you want to keep track of which Certfication the PDFs are for with your EBook manager. This does require the file format to be set as I haven't added support for named arguments.
+```
+python3 main.py 'https://learn.microsoft.com/en-us/training/paths/az-400-get-started-devops-transformation-journey/' 'pdf' 'AZ-400'
 ```
 
 The structure of these paths is Learning Path -> Module -> Units. PDFs should have a Table of Content with the chapters being the Module names, and sub-chapters being the unit names

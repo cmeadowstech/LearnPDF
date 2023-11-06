@@ -1,5 +1,5 @@
 import os
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 from urllib.request import urlopen
 import urllib.parse
 import requests
@@ -7,14 +7,9 @@ import sys
 
 learnPath = str(sys.argv[1])
 
-if len(sys.argv) == 3:
-    series = str(sys.argv[2])
-else:
-    series = "Microsoft Learn"
-
 # Create folders this script uses to export files
 
-folders = ["HTML/img", "PDF"]
+folders = ["HTML/img", "Export"]
 for folder in folders:
     try:
         os.makedirs(folder)
@@ -61,6 +56,12 @@ def cleanModule(unitUrl):
     # Remove scripts and links
     for tag in soup(["link", "script"]):
         tag.decompose()
+        
+    # Remove comments - PDF Converion can run into errors for some reason if comments are malformed
+    comments = soup.find_all(string=lambda text: isinstance(text, Comment))
+
+    for comment in comments:
+        comment.extract()
 
     # Add url to unit title
     header = soup.h1
@@ -165,12 +166,39 @@ def main(url):
             cleaned = cleanModule(url + unit["href"])
             downloadImg(cleaned, url + unit["href"])
             exportHtml(cleaned, fileName)
+    
+    # Sets export args depending on if you want pdf or epub
+    
+    try:
+        match str(sys.argv[2]).lower():
+            case "epub":
+                args = f"'HTML/{fileName}.html' 'Export/{fileName}.epub' --output-profile 'kobo'"
+            case "pdf":
+                args = f"'HTML/{fileName}.html' 'Export/{fileName}.pdf' --pdf-page-numbers --pretty-print --pdf-serif-family 'Bookerly' --base-font-size 10"
+            case _:
+                print('Please choose either pdf or epub')
+                quit()
+    except:
+        args = f"'HTML/{fileName}.html' 'Export/{fileName}.pdf' --pdf-page-numbers --pretty-print --pdf-serif-family 'Bookerly' --base-font-size 10"
+        
+    # Sets series metadata if used
+    
+    try:
+        series = str(sys.argv[3])
+    except:
+        series = "Microsoft Learn"
 
     # Converts the HTML to PDF
-    os.system(
-        f"ebook-convert 'HTML/{fileName}.html' 'PDF/{fileName}.pdf' --page-breaks-before '//h:h2[position()>1]' \
+    '''os.system(
+        f"ebook-convert 'HTML/{fileName}.html' 'Export/{fileName}.pdf' --page-breaks-before '//h:h2[position()>1]' \
         --chapter '//h:h2' --use-auto-toc --level1-toc '//h:h2' --level2-toc '//h:h3' \
         --pdf-page-numbers --pretty-print --pdf-serif-family 'Bookerly' --base-font-size 10\
+        --authors 'Microsoft' --title '{title.find('a').string}' --series '{series}'"
+    )'''
+    
+    os.system(
+        f"ebook-convert {args} --page-breaks-before '//h:h2[position()>1]' \
+        --chapter '//h:h2' --use-auto-toc --level1-toc '//h:h2' --level2-toc '//h:h3' \
         --authors 'Microsoft' --title '{title.find('a').string}' --series '{series}'"
     )
 
