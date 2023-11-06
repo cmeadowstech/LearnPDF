@@ -1,6 +1,6 @@
 # Convert MSFT Learn paths to PDFs
 
-Script to convert MSFT Learn modules to PDFs. Might need more tweaking and testing, but at the moment it's working pretty well. Take a peak at the PDF folder for examples of converted PDFs all the Learn Paths for the AZ-400 Certification. You might have to download them if they are too large to render.
+Script to convert MSFT Learn modules to PDFs. Might need more tweaking and testing, but at the moment it's working pretty well.
 
 ![image](https://github.com/cmeadowstech/LearnPDF/assets/30964870/cda81962-5359-4ff8-b31d-57485096b279)
 
